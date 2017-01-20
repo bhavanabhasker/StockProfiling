@@ -20,14 +20,13 @@ go run client.go
 </pre>
 
 ##About the application 
+
 1. Buying Stocks:
 <pre>
 Run the client program using the command,
 go run client.go GOOG:50%,YHOO:50% 2000
-
 In the above command, GOOG:50% => refers to the stock type and percentage of the amount to be invested 
-                      2000     => refers to the total budget for purchasing the stocks
-                      
+                      2000     => refers to the total budget for purchasing the stocks    
 The client program can be executed without the command line arguments. 
 Just follow the instructions after running the client program
 </pre>
@@ -35,21 +34,17 @@ Just follow the instructions after running the client program
 2. Displaying Stocks:
 <pre>
 go run client.go 12345 
-
 In the above command, 12345 => refers to the user id/client id/trade id 
-
 When the above command is executed, user portfolio will be displayed on the prompt. 
-
 The response from running the above command :
 Stocks : GOOG:100+$520.25,YHOO:200:-$30.40 
-
 The +/- sign will be displayed in the response if there is a change in current stock value
-
 </pre>
 
 ##Notes 
-1. The folder stockprofiling_http uses HTTP Json rpc interface in the server for buying stocks and checking client portfolio and 
-stockprofiling_tcp uses TCP interface for the application. 
+
+1. The folder stockprofiling_http uses HTTP Json rpc interface in the server for buying stocks and checking client portfolio and stockprofiling_tcp uses TCP interface for the application. 
+
 2. Gorilla mux library is used for dispatching the incoming requests from the user
 
 
